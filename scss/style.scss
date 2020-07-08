@@ -1,0 +1,888 @@
+$primary: #3292a6;
+$primary2: #161748;
+$secondary: #e1b382;
+
+body{
+    overflow-x: hidden;
+}
+
+#main-section{
+    //background: $primary;
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px $primary solid;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    box-shadow: 2px 2px 5px;
+}
+
+.navbar{
+    margin-top: 7px;
+    box-shadow: 2px 2px 5px;
+    font-size: 1.4rem;
+    position: sticky;
+    position: -webkit-sticky;
+    border-bottom: 3px $primary solid;
+    opacity: 0.9;
+
+    .navbar-brand{
+        color: $primary;
+        font-size: 1.5rem;
+
+        :hover{
+            color:$primary ;
+        }
+    }
+
+    li{
+        a{
+            color: $primary;
+        }
+    }
+
+    .active{
+        color: $primary;
+        border-left: $primary 3px solid;
+    }
+}
+
+//---------------------------------------------CAROUSEL ON INDEX PAGE----------------------------------
+
+#showcase{
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px;
+}
+
+.carousel-item{
+    height: 450px;
+}
+
+.carousel-image-1{
+    background: url('../img/image1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.carousel-image-2{
+    background: url('../img/image2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-image-3{
+    background: url('../img/image3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#bottom-section{
+    background: $primary;
+    border: 1px $primary solid;
+    width: 100%;
+    margin-top: 100px;
+}
+
+cite {
+    color: $primary;
+}
+
+//--------------------------------------DISEASE PART ON INDEX PAGE-------------------------------------------
+
+#disease-heading{
+    position: relative;
+    min-height: 250px;
+    background: url('../img/diseases.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: aliceblue;
+
+    .dark-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+//------------------------------------SEARCH BUTTON ON INDEX PAGE-----------------------------------------
+
+#searchForm{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.7s;
+    width: 250px;
+    height: 50px;
+    background: #3292a6;
+    box-sizing: border-box;
+    //border-radius: 0px;
+    border: 4px solid #3292a6;
+    padding: 5px;
+
+    input[type="search"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        //display: none;
+        font-size: 1em;
+        border-radius: 0px;
+        padding: 0 20px;
+    }
+
+    .fa{
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0%;
+        color: #3292a6;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+}
+
+#searchForm:hover{
+    width: 600px;
+    cursor: pointer;
+}
+
+#searchForm:hover input{
+    display: block;
+}
+
+#searchForm:hover .fa{
+    background: #3292a6;
+    color: white;
+}
+
+//---------------------------------------WIKIPEDIA API-----------------------------------------------------
+
+.searchResults {
+    //padding: 20px 0 50px;
+    margin-left: 100px;
+    width: 800px;
+    text-align: left;
+  }
+  
+  .resultItem {
+    opacity: 0;
+    margin-bottom: 10px;
+    animation: show 0.5s forwards ease-in-out;
+    color: $primary;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .resultItem:hover {
+    background-color: $primary;
+  }
+  
+  .resultItem-title {
+    margin-bottom: 4px;
+  }
+  
+  .resultItem-title a {
+    color: $secondary;
+    text-decoration: none;
+  }
+  
+  .resultItem-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .resultItem-snippet, .resultItem-link {
+    color: $primary2;
+    font-size: 13px;
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+//--------------------------------------SYMPTOM PART ON INDEX PAGE-------------------------------------------
+
+#symptom-heading{
+    position: relative;
+    min-height: 250px;
+    background: url('../img/symptoms.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: aliceblue;
+
+    .dark-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+//----------------------------SHOWCASE ON SERVICES PAGE-------------------------------
+
+#showcase {
+    position: relative;
+    background-image: url("../img/services_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 415px; }
+
+#showcase .primary-overlay {
+    background: rgba(50, 146, 166, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+//---------------------------DISAPPEAR SUGGESTION BOX---------------------------------------------
+
+.parent {
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //background-color:#e1b382;
+    //padding-top: 50px;
+    //border: 4px blue solid;
+    transition: all 1s ease;
+
+        &.active{
+            justify-content: left;
+        }
+  }
+
+  .box{
+    //border: 1px solid #ccc;
+    //border-radius: 20px;
+    text-align: center;
+    //outline: 3px solid green;
+    height: 477px;
+    width: 66%;
+    border-radius: 5px;
+    background-color: $secondary;
+    //box-shadow: 2px 2px 5px $secondary;
+    transition: all 1s ease;
+  }
+  
+  .d-box {
+    display: none;
+    //border: 1px solid #ccc;
+    //border-radius: 20px;
+    text-align: center;
+    border-radius: 5px;
+    height: 477px;
+    width: 30%;
+    background-color:$secondary;
+    box-shadow: 2px 2px 5px $primary;
+    transition: all 1s ease;
+  
+      &.active {
+        animation: box-display .3s;
+        display: inline-flex;
+      }
+  
+      &.out {
+        animation: box-display-reversed .3s;
+        animation-fill-mode:forwards;
+        display: inline-flex;
+       }
+
+    }
+
+  @keyframes box-display {
+      0% {
+          opacity: 0;
+          transform: scale(0);
+      -webkit-transform: scale(0);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: scale(1);
+      -webkit-transform: scale(1);
+      }
+  }
+  
+  @keyframes box-display-reversed {
+      0% {
+          display: inline-flex;
+          opacity: 1;
+          transform: scale(1);
+          -webkit-transform: scale(1);
+      }
+      99% {
+          display: inline-flex;
+          opacity: 0;
+          transform: scale(0);
+          -webkit-transform: scale(0);
+      }
+      100% {
+          display: none;
+          opacity: 0;
+          transform: scale(0);
+          -webkit-transform: scale(0);
+      }
+  }
+
+  //------------------------------------SEARCH ON SYMPTOMS PAGE-----------------------------------------
+
+  #symptomForm{
+    position: relative;
+    display: flex;
+    top: 0%;
+    left: 18%;
+    margin-top: 20px;
+    width: 600px;
+    height: 40px;
+    border-bottom: 1px solid $primary2;
+    //box-sizing: border-box;
+    //border: 3px white solid;
+    //padding: 0px;
+
+    input[name="symSearch"]{
+        //position: relative;
+        width: 100%;
+        height: 36px;
+        color: $primary2;
+        font-size: 2rem;
+        border-bottom: 1px solid $primary2;
+        background-color: $secondary;
+        //line-height: 40px;
+        outline: 0;
+        margin-top: 0px;
+        //margin-left: px;
+        border: 0;
+        //display: none;
+        font-size: 1em;
+        border-radius: 0px;
+        padding: 0 10px;
+        font-weight: bold;
+    }
+
+    input[name="submitSearch"]{
+        position: relative;
+        // top: 0;
+        
+        width: 100px;
+        background-color: $primary2;
+        color: $secondary;
+        height: 40px;
+        //line-height: 40px;
+        outline: 0;
+        border: 0;
+        //display: none;
+        font-size: 1em;
+        border-radius: 2px;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+//---------------------------------SUGGESTION BOX----------------------------------------
+
+.sug-box{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 0px;
+    //border: 2px $primary dashed;
+}
+
+.symp{
+    padding: 10px;
+    font-weight: bold;
+    height: 60px;
+    border-radius: 5px;
+    color: $secondary;
+    background-color: $primary2;
+    border: 1px $primary2 solid;
+    box-shadow: 1px 1px 3px $primary2;
+
+    &:hover{
+        box-shadow: 0px 0px 0px $primary;
+        cursor: pointer;
+    }
+    &.active{
+        box-shadow: none;
+    }
+}
+
+.dsymp{
+    padding: 8px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 5px;
+    color: $secondary;
+    background-color: $primary2;
+    //border: 1px $primary solid;
+    box-shadow: 1px 1px 3px $primary;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#flexBox{
+
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    //border: 4px red dashed;
+}
+
+////-----------------------------------------TEXT ANIMATION------------------------------------------
+
+#disheader{
+    background-color: $primary;
+    padding: 5rem;
+
+    .container{
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .container span{
+        color: white;
+        display: block;
+    }
+
+    .text1{
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 8px;
+        margin-bottom: 0px;
+        position: relative;
+        animation: text1 2.5s 1;
+    }
+
+    .text2{
+        font-size: 20px;
+        color: #6ab04c;
+        animation: text2 1.8s 1;
+    }
+
+    @keyframes text1 {
+        0%{
+            color: white;
+            margin-bottom: -40px;
+        }
+        30%{
+            letter-spacing: 11px;
+            margin-bottom: -40px;
+        }
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+        }
+    }
+
+    @keyframes text2 {
+        0%{
+            color: black;
+            opacity: 0;
+        }
+        30%{
+            opacity: 0;
+        }
+        85%{
+            opacity: 0;
+        }
+        93%{
+            opacity: 0;
+        }
+        95%{
+            opacity: 0.4;
+        }
+        99%{
+            opacity: 0.7;
+        }
+
+    }
+}
+
+//------------------------------TREATMENT--------------------------------------------------
+
+#treatment-section{
+    //padding-bottom: 20px;
+
+    #treatment-heading{
+        padding-left: 70px;
+        color:#e1b382;
+        background-color: #161748;
+        padding-top: 11px;
+        padding-bottom: 20px;
+    }
+    
+    .treatmentList{
+        list-style-type: square;
+        background-color: $primary;
+    
+        li{
+            background-color: $primary;
+            color: white;
+            font-size: large;
+            padding: 10px;
+            //border-bottom: 1px white solid;
+        }
+    }
+}
+
+
+//------------------------------PREVENTION--------------------------------------------------
+
+#prevention-section{
+    background-color: $primary;
+
+    #prevention-heading{
+        padding-left: 70px;
+        color:#e1b382;
+        background-color: #161748;
+        padding-top: 11px;
+        padding-bottom: 20px;
+    }
+    
+    .preventionList{
+        list-style-type: square;
+    
+        li{
+            background-color: $primary;
+            color: white;
+            font-size: large;
+            padding: 10px;
+            //border-bottom: 1px white solid;
+        }
+    }
+}
+
+
+//------------------------------REMEDY--------------------------------------------------
+
+#remedy-section{
+    background-color: $primary;
+
+    #remedy-heading{
+        padding-left: 70px;
+        color:#e1b382;
+        background-color: #161748;
+        padding-top: 11px;
+        padding-bottom: 20px;
+    }
+    
+    .remedyList{
+        list-style-type: square;
+    
+        li{
+            background-color: $primary;
+            color: white;
+            font-size: large;
+            padding: 10px;
+            //border-bottom: 1px white solid;
+        }
+    }
+}
+
+
+
+
+//--------------------------------------------COVID_19 API-----------------------------------------------------
+
+#country{
+    background-color: #161748;
+
+    #i_heading{
+        font-size: 2rem;
+        color: #e1b382;
+        background-color: #161748;
+    }
+}
+
+#world{
+    background-color: #161748;
+
+    #w_heading{
+        font-size: 2rem;
+        color: #e1b382;
+        background-color: #161748;
+    }
+}
+
+////--------------------------------------------DOCTOR BUTTON----------------------------------------------------------
+
+#neonbutton{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background: $primary2;
+
+    #button{
+        position: relative;
+        border: 2px $secondary solid;
+        display: inline-block;
+        padding: 11px 25px;
+        color: $secondary;
+        letter-spacing: 4px;
+        font-size: 24px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+
+    :hover{
+        color: $primary2 !important;
+        cursor: pointer !important;
+        background-color: $secondary;
+        box-shadow: 0 0 10px $secondary, 0 0 40px $secondary, 0 0 80px $secondary;
+        transition-delay: 1s;
+    }
+}
+
+#pathbutton{
+    outline: 0;
+    border: 1px solid $secondary;
+    color: $secondary;
+    text-decoration: none;
+    padding: 7px;
+    height: 40px;
+    width: 80px;
+    background-color: $primary2;
+
+        &:hover{
+            box-shadow: 0px 0px 5px $secondary;
+        }
+}
+
+//--------------------------------------------------
+
+
+
+
+
+.inline-form {
+    //display: inline;
+    //display: inline-block;
+    //float: left;
+    display: flex;
+    flex: wrap;
+    flex-flow: row wrap;
+    align-items: center;
+
+    button {
+        padding: 0px 20px;
+        height: 35px;
+        float: right;
+        background-color: $primary;
+        border: 1px solid #ddd;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 1px 1px 7px $primary !important;
+            cursor: pointer !important;
+        }
+    }
+
+    input[type="text"], input[type="password"]{
+        //vertical-align: middle;
+        width: 130px;
+        font-size: 20px;
+        height: 35px;
+        color: $primary;
+        margin: 3px 5px 3px 0;
+        padding: 1px 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+
+        &:hover{
+            box-shadow: 1px 1px 7px $primary;
+        }
+      }
+}
+
+#logoutForm{
+    display: flex;
+    flex: wrap;
+    flex-flow: row wrap;
+    align-items: center;
+
+    button{
+        padding: 0px 20px;
+        height: 35px;
+        float: right;
+        margin-left: 4px;
+        margin-top: 6px;
+        background-color: $primary;
+        border: 1px solid #ddd;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 1px 1px 7px $primary !important;
+            cursor: pointer !important;
+        }
+    }
+}
+
+#signupForm{
+    display: flex;
+    flex: wrap;
+    flex-flow: row wrap;
+    align-items: center;
+
+    button{
+        padding: 0px 20px;
+        margin-left: 4px;
+        height: 35px;
+        float: right;
+        background-color: $primary;
+        border: 1px solid #ddd;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 1px 1px 7px $primary !important;
+            cursor: pointer !important;
+        }
+    }
+}
+
+//---------------------------------------AUTOCOMPLETE SEARCH------------------------------------------------
+
+#show-list{
+    position: absolute;
+    background-color: $secondary;
+    opacity: 0.98;
+    width: 600px;
+
+    li{
+        text-align: left;
+        list-style-type: none;
+        color: $primary2;
+        padding-top: 5px;
+        font-weight: bold;
+        //height: 30px;
+        //background-color: $primary2;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+}
+
+//-------------------------------------------SERVICE CARDS-----------------------------------------------------------
+
+#service-card{
+    background-color: $primary2;
+    color: $secondary;
+    transition: display 1s;
+
+    #card-button{
+        padding-left: 10px;
+        padding: 9px;
+        color: $secondary;
+        border: 1px solid $secondary;
+        font-size: 0.8rem;
+        text-decoration: none;
+        display: none;
+        
+    
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 5px $secondary;
+        }
+    }
+
+    &:hover{
+        
+        #card-button{
+            display:block;
+        }
+    }
+}
+
+//--------------------------------------------------ABOUT PROFILE------------------------------------------------
+
+.about{
+    background-image: url('../img/about.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    .about-overlay{
+        position: relaive;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+
+        
+    }
+
+    .left{
+        h4{
+            color: $secondary;
+        }
+        p{
+            color: $primary;
+        }
+    }
+
+
+    .icons{
+        &:hover{
+            background-color: $secondary;
+            i{
+                color: $primary;
+            }
+        }
+
+        i{
+            color: $secondary;
+        }
+    }
+}
+
+

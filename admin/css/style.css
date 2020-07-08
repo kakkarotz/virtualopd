@@ -1,0 +1,25 @@
+body {
+  overflow: auto;
+  background-image: url("../img/admin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nav-item:hover {
+  background-color: burlywood; }
+
+.addDis {
+  padding: 10px;
+  width: 40px;
+  font-size: 20px;
+  text-decoration: #3292a6;
+  font-weight: bold;
+  background-color: #3b3433;
+  margin-bottom: 100px;
+  color: #3292a6; }
+  .addDis:hover {
+    box-shadow: 1px 1px 5px #3b3433;
+    background-color: burlywood; }
+
+tr:hover, td:hover {
+  background-color: burlywood;
+  color: white !important; }

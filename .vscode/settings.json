@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "virtualopd",
+            "dialect": "MySQL",
+            "name": "$conn",
+            "password": "root123",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
