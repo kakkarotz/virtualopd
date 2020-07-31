@@ -1,5 +1,6 @@
 # virtualopd
 A medical website prototype
+It is a e-healthcare application aimed at providing basic e-health services. It provides services like Symptom Checker and finding nearby doctors and pathology labs.
 
 Languages Used - 
 - HTML
